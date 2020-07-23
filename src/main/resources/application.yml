@@ -42,3 +42,21 @@ server:
 # Swagger相关的配置，这个要与swagger的配置类中设置一样即可，不需要说完全和我写的一样都是可以的哦!!!!
 swagger:
   button-open: true
+#oauth2用户认证中心
+security:
+  oauth2:
+    resource:
+      jwt:
+        key-url: http:localhost:7007/oauth/token_key
+        key-value: xiaxia
+    client:
+      client-id: client_2
+      client-secret: 123456
+      #获取token
+      grant-type: password
+      scope: server
+      access-token-uri: http://localhost:7007/oauth/token
+      user-authorization-uri: http://localhost:7007/oauth/authorize
+
+
+
