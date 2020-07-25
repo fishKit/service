@@ -50,13 +50,14 @@ security:
         key-url: http:localhost:7007/oauth/token_key
         key-value: xiaxia
     client:
-      client-id: client_2
+      client-id: client_1
       client-secret: 123456
       #获取token
       grant-type: password
       scope: server
       access-token-uri: http://localhost:7007/oauth/token
       user-authorization-uri: http://localhost:7007/oauth/authorize
+
 
 
 
